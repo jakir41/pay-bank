@@ -48,19 +48,19 @@
       </div>
       <div class="p-3 grid grid-cols-3 gap-4 max-w-lg mx-auto">
         <div id="addmoney"
-          class="border border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
+          class="border form-btn border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
         >
           <img class="w-[30px]" src="./assets/wallet1.png" alt="" />
           <p>Add Money</p>
         </div>
         <div id="cashout"
-          class="border border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
+          class="border form-btn border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
         >
           <img class="w-[30px]" src="./assets/send1.png" alt="" />
           <p>Cashout</p>
         </div>
-        <div
-          class="border border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
+        <div id="transfer-money"
+          class="border form-btn border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
         >
           <img class="w-[30px]" src="./assets/money1.png" alt="" />
           <p>Transfer Money</p>
@@ -77,17 +77,17 @@
           <img class="w-[30px]" src="./assets/purse1.png" alt="" />
           <p>Pay Bill</p>
         </div>
-        <div
-          class="border border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
+        <div id="transction-btn"
+          class="border form-btn border-gray-300 rounded-2xl py-5 flex flex-col text-center items-center"
         >
           <img class="w-[30px]" src="./assets/transaction1.png" alt="" />
           <p>Transactions</p>
         </div>
       </div>
     </section>
-    <section id="add-money">
+    <section class="form" id="add-money">
       <div class="max-w-lg mx-auto">
-        <h1 class="my-4 font-bold text-2xl ml-4">Add Mony</h1>
+        <h1 class="my-4 font-bold text-2xl ml-4">Add Money</h1>
         <form class="m-3 bg-white p-10 rounded-xl " action="">
           <div>
             <h1 class="font-semibold">Select A Bank</h1>
@@ -120,7 +120,7 @@
         </form> 
       </div>
     </section>
-    <section id="cash-out" class="hidden">
+    <section id="cash-out" class=" form hidden">
       <div class="max-w-lg mx-auto">
         <h1 class="my-4 font-bold text-2xl ml-4">Cash Out</h1>
         <form class="m-3 bg-white p-10 rounded-xl " action="">
@@ -145,6 +145,20 @@
         </div>
         <button  id="withdraw-money" class="btn mt-4 text-white  text-xl bg-[#0874F2] w-full rounded-3xl">Withdraw Money</button>
         </form> 
+      </div>
+    </section>
+    <section id="transfer" class="form hidden">
+      <div>
+        <h1 class=" font-bold text-2xl max-w-lg mx-auto">Transfer MOney</h1>
+      </div>
+    </section>
+    <section id="transction" class="form">
+      <div class="flex max-w-lg mx-auto justify-between p-5" >
+        <h1 class="font-bold">transction</h1>
+        <h1 class="font-bold text-gray-500">View All</h1>
+      </div>
+      <div class="transtionData">
+        
       </div>
     </section>
     <script src="./home.js"></script>
